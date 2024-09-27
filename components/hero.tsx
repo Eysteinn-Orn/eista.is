@@ -5,7 +5,7 @@ import { useEffect, useState, useMemo } from "react";
 const FADE_IN_DELAY = 300;
 const PROFILE_IMAGE_SRC = "/images/profile.jpg";
 const PROFILE_IMAGE_ALT = "Profile";
-const HEADER_TEXT = "Hello, I’m [Eysteinn]";
+const HEADER_TEXT = "Hello, I’m Eysteinn";
 const DESCRIPTION_TEXT = "A web developer passionate about creating sleek, efficient, and beautiful user experiences.";
 
 const Hero = () => {
