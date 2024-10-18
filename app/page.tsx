@@ -1,5 +1,6 @@
 import Hero from '@/components/hero';
 
+
 /**
  * HomePage component that includes the Hero section.
  */

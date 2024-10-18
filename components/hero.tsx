@@ -1,9 +1,11 @@
 "use client";
 import { useEffect, useState, useMemo } from "react";
+import Image from "next/image";
+import profilePic from "@/app/images/profile.jpg";
+
 
 // Constants
 const FADE_IN_DELAY = 300;
-const PROFILE_IMAGE_SRC = "/images/profile.jpg";
 const PROFILE_IMAGE_ALT = "Profile";
 const HEADER_TEXT = "Hello, I’m Eysteinn";
 const DESCRIPTION_TEXT = "A web developer passionate about creating sleek, efficient, and beautiful user experiences.";
@@ -32,9 +34,11 @@ const Hero = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center px-5 py-10">
         {/* Left side: Profile Image */}
         <div className="w-full md:w-1/2 mb-10 md:mb-0 flex justify-center">
-          <img
-            src={PROFILE_IMAGE_SRC}
+          <Image
+            src={profilePic}
             alt={PROFILE_IMAGE_ALT}
+            width={256}
+            height={256}
             className="rounded-full w-64 h-64 object-cover shadow-lg"
           />
         </div>
